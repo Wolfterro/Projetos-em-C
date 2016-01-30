@@ -11,7 +11,7 @@
 
 #### OlaMundo - Programa de Saudação 'Avançado'!
 
-###### Todo desenvolvedor, ou aspirante a desenvolvedor, ao aprender uma nova linguagem de programação, sempre começa com uma aplicação simples para entender como a sintaxe da linguagem funciona.
+###### Todo desenvolvedor ou aspirante a desenvolvedor, ao aprender uma nova linguagem de programação, sempre começa com uma aplicação simples para entender como a sintaxe da linguagem funciona.
 ###### Com a linguagem C não é diferente, mas decidi 'extrapolar' um pouco neste quesito. Decidi então criar o OlaMundo disponível em linguas diferentes: Português, Inglês, Espanhol, entre outros.
 
 ###### Aqui estão os possíveis argumentos que poderão ser inseridos na hora de executar o programa:
