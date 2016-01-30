@@ -1,2 +1,48 @@
-# Projetos-em-C
-Pequenos projetos e testes simples em linguagem C.
+# Projetos em C
+#### Pequenos projetos e testes simples em linguagem C.
+
+### Descrição:
+
+###### Os programas apresentados neste repositório são apenas projetos simples e testes escritos na linguagem C.
+###### Os programas contidos neste repositório não devem ser levados "a sério", isto é, não possuem muita utilidade prática no dia-a-dia a não ser o aprendizado e o entendimento de como a linguagem C funciona e suas sintaxes.
+###### Os programas aqui contidos foram desenvolvidos pensando na plataforma Linux e UNIX em geral, podendo não funcionar na plataforma Windows!
+
+### Programas:
+
+#### OlaMundo - Programa de Saudação 'Avançado'!
+
+###### Todo desenvolvedor, ou aspirante a desenvolvedor, ao aprender uma nova linguagem de programação, sempre começa com uma aplicação simples para entender como a sintaxe da linguagem funciona.
+###### Com a linguagem C não é diferente, mas decidi 'extrapolar' um pouco neste quesito. Decidi então criar o OlaMundo disponível em linguas diferentes: Português, Inglês, Espanhol, entre outros.
+
+###### Aqui estão os possíveis argumentos que poderão ser inseridos na hora de executar o programa:
+
+      Ajuda:
+      '--help' ou '-h': Mostra a opção de ajuda.
+      
+      Saudações:
+      '--pt' ou '-1': Saudação em português.
+      '--en' ou '-2': Saudação em inglês.
+      '--es' ou '-3': Saudação em espanhol.
+      '--fr' ou '-4': Saudação em francês.
+      '--it' ou '-5': Saudação em italiano.
+      '--de' ou '-6': Saudação em alemão.
+      '--jp' ou '-7': Saudação em japonês.
+      '--ch' ou '-8': Saudação em chinês tradicional.
+      '--ru' ou '-9': Saudação em russo.
+      
+      Versão:
+      '--version' ou '-v': Mostra a versão atual do programa.
+
+##### Download:
+
+###### Você pode baixar o programa já compilado e executá-lo com o comando abaixo:
+
+      wget 'https://raw.github.com/Wolfterro/Projetos-em-C/master/olamundo'
+      chmod +x olamundo
+      ./olamundo
+
+###### Você também poderá compilar o programa em seu sistema através do comando abaixo (é necessário possuir o GCC):
+
+      wget 'https://raw.github.com/Wolfterro/Projetos-em-C/master/src/olamundo.c'
+      gcc olamundo.c -o olamundo
+      ./olamundo
