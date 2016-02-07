@@ -46,3 +46,26 @@
       wget 'https://raw.github.com/Wolfterro/Projetos-em-C/master/src/olamundo.c'
       gcc olamundo.c -o olamundo
       ./olamundo
+
+<br />
+
+#### Power - Biblioteca de Exponenciação em C!
+
+###### Este programa é apenas um teste para o uso de uma simples biblioteca de funções em C utilizando os arquivos de 'headers' disponíveis para o programa que você deseja criar.
+###### Decidi então criar uma simples biblioteca com uma função de exponenciação como exemplo. A biblioteca 'math.h' já cumpre essa função com a função "pow(int base, int expo)", mas decidi criar uma igual por conta própria.
+###### Decidi também enviar um arquivo de fonte como exemplo de uso da biblioteca.
+
+##### Download:
+
+###### Você pode baixar o programa já compilado e executá-lo com o comando abaixo:
+
+      wget 'https://raw.github.com/Wolfterro/Projetos-em-C/master/power'
+      chmod +x power
+      ./power
+
+###### Você também poderá compilar o programa em seu sistema através do comando abaixo (é necessário possuir o GCC):
+
+      wget 'https://raw.github.com/Wolfterro/Projetos-em-C/master/src/power.c'
+      wget 'https://raw.github.com/Wolfterro/Projetos-em-C/master/lib/power.h'
+      gcc power.c -o power -I .
+      ./power
