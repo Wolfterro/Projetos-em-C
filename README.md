@@ -69,3 +69,33 @@
       wget 'https://raw.github.com/Wolfterro/Projetos-em-C/master/lib/power.h'
       gcc power.c -o power -I .
       ./power
+
+<br />
+
+#### Ctemp - Conversor de Temperatura em C
+
+###### Este é um programa básico para conversão de temperaturas, convertendo os valores para as outras unidades de temperatura, como Celsius, Fahrenheit e Kelvin.
+###### Basta executar o programa via terminal e inserir os argumentos necessários. O programa então irá fazer os cálculos e irá mostrar seus valores em outras unidades de temperatura.
+###### Programa similar a este e com o uso de interface gráfica pode ser encontrado neste repositório (requer Java):  [Conversor de Temperatura 2016](https://github.com/Wolfterro/Conversor-de-Temperatura-2016)
+
+###### Aqui está uma lista com os possíveis argumentos:
+      
+      Unidade:
+      '-c' ou '--celsius':    Converte de Celsius para Fahrenheit e Kelvin
+      '-f' ou '--fahrenheit': Converte de Fahrenheit para Celsius e Kelvin
+      '-k' ou '--kelvin':     Converte de Kelvin para Celsius e Fahrenheit
+      '-h' ou '--help':       Mostra a tela de ajuda
+
+##### Download:
+
+###### Você pode baixar o programa já compilado e executá-lo com o comando abaixo:
+
+      wget 'https://raw.github.com/Wolfterro/Projetos-em-C/master/ctemp'
+      chmod +x ctemp
+      ./ctemp [unidade] [temperatura]
+
+###### Você também poderá compilar o programa em seu sistema através do comando abaixo (é necessário possuir o GCC):
+
+      wget 'https://raw.github.com/Wolfterro/Projetos-em-C/master/src/ctemp.c'
+      gcc ctemp.c -o ctemp
+      ./ctemp [unidade] [temperatura]
