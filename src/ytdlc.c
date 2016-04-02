@@ -1,3 +1,11 @@
+/*
+ * Ytdlc - Download de Vídeos e Músicas com youtube-dl
+ *
+ * Data: 02/04/2016
+ * Autor: Wolfterro
+ *
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -52,7 +60,7 @@ void intro() {
 	printf("======================================================\n");
 
 	printf("* Este programa requer o youtube-dl instalado e reconhecido como comando interno!\n");
-	printf("* Este programa requer o ffmpeg ou libav-tools instalado para converter em MP3!\n\n");
+	printf("* Este programa requer o ffmpeg ou libav-tools instalado para possíveis conversões!\n\n");
 
 	printf("Fazendo download de vídeo: (ID: %s) para o caminho: %s\n\n", id_video, current_dir);
 
@@ -200,4 +208,6 @@ int main(int argc, char *argv[]) {
 			}
 		}
 	}
+
+	return 0;
 }
