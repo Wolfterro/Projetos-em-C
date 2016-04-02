@@ -16,7 +16,7 @@ char id_video[1024];
 void help() {
 	printf("ytdlc: Download de Vídeos e Músicas com youtube-dl\n");
 	printf("--------------------------------------------------\n");
-	printf("Uso: ytdlc [Formato] [ID do vídeo]\n\n");
+	printf("Uso: ytdlc [Formato] [ID do vídeo] ...\n\n");
 
 	printf("Comandos:\n");
 	printf("---------\n");
@@ -62,7 +62,7 @@ void intro() {
 	printf("* Este programa requer o youtube-dl instalado e reconhecido como comando interno!\n");
 	printf("* Este programa requer o ffmpeg ou libav-tools instalado para possíveis conversões!\n\n");
 
-	printf("Fazendo download de vídeo: (ID: %s) para o caminho: %s\n\n", id_video, current_dir);
+	printf("Fazendo download(s) para o caminho: %s\n", current_dir);
 
 	return;
 }
@@ -149,12 +149,14 @@ void youtube_dl_update() {
 // Método principal do programa
 int main(int argc, char *argv[]) {
 
+	int i;
+
 	// Alterando o caminho para a pasta 'home' do usuário
 	chdir(getenv("HOME"));
 
 	if (argv[1] == NULL) {
 		printf("Erro! Falta argumentos! Use --help ou -h para ajuda.\n");
-		printf("Uso: ytdlc [Formato] [ID do vídeo]\n");
+		printf("Uso: ytdlc [Formato] [ID do vídeo] ...\n");
 	}
 	else if (0 == strcmp(argv[1], "-h") || 0 == strcmp(argv[1], "--help")) {
 		help();
@@ -166,44 +168,52 @@ int main(int argc, char *argv[]) {
 		youtube_dl_update();
 	}
 	else {
-		if (argc > 3) {	
+		if (argc > 1026) {	
 			printf("Erro! Muitos argumentos! Use --help ou -h para ajuda.\n");
-			printf("Uso: ytdlc [Formato] [ID do vídeo]\n");
+			printf("Uso: ytdlc [Formato] [ID do vídeo] ...\n");
 		}
 		else {
 			if (argv[2] == NULL) {
 			printf("Erro! Falta argumentos! Use --help ou -h para ajuda.\n");
-			printf("Uso: ytdlc [Formato] [ID do vídeo]\n");
+			printf("Uso: ytdlc [Formato] [ID do vídeo] ...\n");
 			}
 			else {
-				sscanf(argv[2], "%s", id_video);
+				intro();
+				for (i = 2; i < 1026; i++) {
+					if (argv[i] == NULL) {
+						break;
+					}
+					else {
+						sscanf(argv[i], "%s", id_video);
 
-				if (0 == strcmp(argv[1], "--mp3")) {
-					intro();
-					download_mp3(id_video);
-				}
-				else if (0 == strcmp(argv[1], "--wav")) {
-					intro();
-					download_wav(id_video);
-				}
-				else if (0 == strcmp(argv[1], "--mp4")) {
-					intro();
-					download_mp4(id_video);
-				}
-				else if (0 == strcmp(argv[1], "--mp4-conv")) {
-					intro();
-					download_mp4_conv(id_video);
-				}
-				else if (0 == strcmp(argv[1], "--webm")) {
-					intro();
-					download_webm(id_video);
-				}
-				else if (0 == strcmp(argv[1], "--webm-conv")) {
-					intro();
-					download_webm_conv(id_video);
-				}
-				else {
-					printf("Argumento Inválido! Use --help ou -h para ajuda.\n");
+						if (0 == strcmp(argv[1], "--mp3")) {
+							printf("\nFazendo download de vídeo [%d/%d]...\n", (i - 1), (argc - 2));
+							download_mp3(id_video);
+						}
+						else if (0 == strcmp(argv[1], "--wav")) {
+							printf("\nFazendo download de vídeo [%d/%d]...\n", (i - 1), (argc - 2));
+							download_wav(id_video);
+						}
+						else if (0 == strcmp(argv[1], "--mp4")) {
+							printf("\nFazendo download de vídeo [%d/%d]...\n", (i - 1), (argc - 2));
+							download_mp4(id_video);
+						}
+						else if (0 == strcmp(argv[1], "--mp4-conv")) {
+							printf("\nFazendo download de vídeo [%d/%d]...\n", (i - 1), (argc - 2));
+							download_mp4_conv(id_video);
+						}
+						else if (0 == strcmp(argv[1], "--webm")) {
+							printf("\nFazendo download de vídeo [%d/%d]...\n", (i - 1), (argc - 2));
+							download_webm(id_video);
+						}
+						else if (0 == strcmp(argv[1], "--webm-conv")) {
+							printf("\nFazendo download de vídeo [%d/%d]...\n", (i - 1), (argc - 2));
+							download_webm_conv(id_video);
+						}
+						else {
+							printf("Argumento Inválido! Use --help ou -h para ajuda.\n");
+						}
+					}
 				}
 			}
 		}
