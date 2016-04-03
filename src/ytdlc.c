@@ -1,7 +1,7 @@
 /*
  * Ytdlc - Download de Vídeos e Músicas com youtube-dl
  *
- * Data: 02/04/2016
+ * Data: 03/04/2016
  * Autor: Wolfterro
  *
  */
@@ -211,7 +211,8 @@ int main(int argc, char *argv[]) {
 							download_webm_conv(id_video);
 						}
 						else {
-							printf("Argumento Inválido! Use --help ou -h para ajuda.\n");
+							printf("\n*** Erro! Argumento Inválido! Use --help ou -h para ajuda. ***\n");
+							break;
 						}
 					}
 				}
