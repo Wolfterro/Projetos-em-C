@@ -107,3 +107,25 @@
 ##### Movido para outro repositório. Visite [https://github.com/Wolfterro/Ytdlc](https://github.com/Wolfterro/Ytdlc)
 
 <br />
+
+#### Trump.c - Construa seu próprio muro!
+
+###### *** Este programa é apenas fruto de uma simples brincadeira aliada ao ócio de um programador, por favor não leve a sério! ***
+###### Este é um simples programa que, ao ser executado, irá criar um "muro" em seu terminal.
+###### Para encerrar o programa, basta apertar CTRL + C e ele irá dizer o tamanho do muro que você construiu.
+
+##### Download:
+###### Assim como o muro, você também precisa "construir" o programa, isto é, compilar. Faz parte da brincadeira:
+
+      wget 'https://raw.github.com/Wolfterro/Projetos-em-C/master/src/Trump.c'
+      gcc Trump.c -o Build -Wall
+      ./Build
+
+###### Ou utilizando o git:
+
+      git clone https://github.com/Wolfterro/Projetos-em-C.git
+      cd Projetos-em-C/src
+      gcc Trump.c -o Build -Wall
+      ./Build
+
+<br />
