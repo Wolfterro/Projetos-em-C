@@ -37,7 +37,7 @@
 
 ###### Você pode baixar o programa já compilado (x64) e executá-lo com o comando abaixo:
 
-      wget 'https://raw.github.com/Wolfterro/Projetos-em-C/master/olamundo'
+      wget 'https://raw.github.com/Wolfterro/Projetos-em-C/master/bin/olamundo'
       chmod +x olamundo
       ./olamundo
 
@@ -59,7 +59,7 @@
 
 ###### Você pode baixar o programa já compilado (x64) e executá-lo com o comando abaixo:
 
-      wget 'https://raw.github.com/Wolfterro/Projetos-em-C/master/power'
+      wget 'https://raw.github.com/Wolfterro/Projetos-em-C/master/bin/power'
       chmod +x power
       ./power
 
@@ -90,7 +90,7 @@
 
 ###### Você pode baixar o programa já compilado (x64) e executá-lo com o comando abaixo:
 
-      wget 'https://raw.github.com/Wolfterro/Projetos-em-C/master/ctemp'
+      wget 'https://raw.github.com/Wolfterro/Projetos-em-C/master/bin/ctemp'
       chmod +x ctemp
       ./ctemp [unidade] [temperatura]
 
