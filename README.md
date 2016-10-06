@@ -114,6 +114,22 @@
 ###### Este é um simples programa que, ao ser executado, irá criar um "muro" em seu terminal.
 ###### Para encerrar o programa, basta apertar CTRL + C e ele irá dizer o tamanho do muro que você construiu.
 
+###### Aqui está uma lista com os possíveis argumentos:
+      
+      Opções:
+      -------
+      '-h' ou '--help':                   Mostra o menu de ajuda.
+      
+      Cores:
+      ------
+      '-rw' ou '--red-wall':              Constrói um muro vermelho.
+      '-gw' ou '--green-wall':            Constrói um muro verde.
+      '-yw' ou '--yellow-wall':           Constrói um muro amarelo.
+      '-bw' ou '--blue-wall':             Constrói um muro azul.
+      '-mw' ou '--magenta-wall':          Constrói um muro magenta.
+      '-cw' ou '--cyan-wall':             Constrói um muro ciano.
+      '-ww' ou '--white-wall':            Constrói um muro branco.
+
 ##### Download:
 ###### Assim como o muro, você também precisa "construir" o programa, isto é, compilar. Faz parte da brincadeira:
 
